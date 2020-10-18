@@ -1,0 +1,119 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, img, ul, li,
+form, caption, footer, header, menu {
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+vertical-align: baseline;
+box-sizing: border-box;
+}
+
+h3 {
+font-size: 25px;
+}
+
+body {
+line-height: normal;
+}
+ol, ul {
+list-style: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body, button, input, label, select, td, textarea {
+    font-family: Arial, Helvetica, tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+}
+body{
+    width: 100%;
+    position: relative;
+    background-color: skyblue;
+    min-width: 1080px;
+}
+.homepageheader {
+position: fixed;
+height: 82px;
+width: 100%;
+min-width: 980px;
+border-bottom: 1px solid #8E9D8E;
+margin:  0px;
+background-position-x: initial;
+background-position-y: initial;
+background-size: initial;
+background-attachment: initial;
+background-origin: initial;
+background-clip: initial;
+background-color: black;
+}
+
+.buybutton {
+margin: 0;
+padding: 9px 5px;
+font-family: Arial, Helvetica, sans-serif;
+font-size:20px;
+outline: none;
+text-align: center;
+text-decoration: none;
+color: #ffffff;
+border: solid 1px blueviolet; 
+border-right:0px;
+background: blue;
+border-top-right-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+}
+
+.buybutton:hover {
+text-decoration: none;
+background: #24bfae;
+}
+
+.home-welcome {
+margin-top: 0px;
+}
+
+.home-welcome-text { 
+height: 800px;
+}
+
+.home-welcome-text h1 {
+text-align: center; 
+font-size: 85px; 
+padding-top: 150px; 
+font-weight: bold; 
+color: #ffffff;
+}
+
+.home-welcome-text h2 {
+text-align: center;   
+font-weight: bold; 
+color: #ffffff;
+font-size: 30px;
+}
+
+.home-footer {
+text-align: center;
+color: #ffffff;
+background-color: #3f3838;
+font-size: 18px;
+padding: 20px 10px;
+}
+
+.home-prodlist h3 {
+text-align: center;
+margin: 20px 10px;
+font-size: 25px;
+}
+
+.home-product-img img div {
+font-size: 20px;
+}
+
+.home-product-img:hover {
+background-color: blue;
+border-radius: 8px;
+color: #fff;
+}
