@@ -42,7 +42,7 @@
 			<div style="padding: 20px 30px; width: 85%; margin: 0 auto;">
 				<ul style="float: left;">
 					<li style="float: left; padding: 25px;">
-						<div class="home-product-img"><a href="product-pages/hd800s.php">
+						<div class="home-product-img"><a href="product-pages/hd800s.php" class="product-link">
 						<img src="./images/HD800S.jpg" class="home-products"></a>
 						<div class="overlay">
 							<div class="overlay-text">Sennheiser HD-800S - $2499</div>
