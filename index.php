@@ -43,10 +43,7 @@
 				<ul style="float: left;">
 					<li style="float: left; padding: 25px;">
 						<div class="home-product-img"><a href="product-pages/hd800s.php">
-						<img src="./images/HD800S.jpg" class="home-products"></a>
-						<div class="overlay">
-							<div class="overlay-text">Sennheiser HD-800S - $2499</div>
-						</div>	
+							<img src="./images/HD800S.jpg" class="home-products"></a>
 						</div>
 					</li>
 				</ul>
@@ -54,33 +51,21 @@
 					<li style="float: left; padding: 25px;">
 						<div class="home-product-img"><a href="product-pages/ananda.php">
 							<img src="./images/ANANDA.jpg" class="home-products"></a>
-							<div class="overlay">
-							<div class="overlay-text">HiFiMAN Ananda - $1199</div>
-						</div>	
 						</div>
-						
 					</li>
 				</ul>
 				<ul style="float: left;">
 					<li style="float: left; padding: 25px;">
 						<div class="home-product-img"><a href="product-pages/ananda.php">
 							<img src="./images/HD6XX.jpg" class="home-products"></a>
-							<div class="overlay">
-							<div class="overlay-text">Sennheiser HD-6XX - $280</div>
-						</div>	
 						</div>
-						
 					</li>
 				</ul>
 				<ul style="float: left;">
 					<li style="float: left; padding: 25px;">
 						<div class="home-product-img"><a href="product-pages/he4xx.php">
 							<img src="./images/HE4XX.jpg" class="home-products"></a>
-							<div class="overlay">
-							<div class="overlay-text">HiFiMAN HE-4XX - $200</div>
-						</div>	
 						</div>
-						
 					</li>
 				</ul>
 						</div>
