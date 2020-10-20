@@ -1,119 +1,246 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, img, ul, li,
-form, caption, footer, header, menu {
-margin: 0;
-padding: 0;
-border: 0;
-font: inherit;
-vertical-align: baseline;
-box-sizing: border-box;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ul,
+li,
+form,
+caption,
+footer,
+header,
+menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+a {
+    width: 50%;
 }
 
 h3 {
-font-size: 25px;
+    font-size: 25px;
 }
 
 body {
-line-height: normal;
+    line-height: normal;
 }
-ol, ul {
-list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
 
 * {
     margin: 0px;
     padding: 0px;
 }
-body, button, input, label, select, td, textarea {
-    font-family: Arial, Helvetica, tahoma,verdana,arial,sans-serif;
+
+body,
+button,
+input,
+label,
+select,
+td,
+textarea {
+    font-family: Arial, Helvetica, tahoma, verdana, arial, sans-serif;
     font-size: 12px;
 }
-body{
+
+body {
     width: 100%;
     position: relative;
     background-color: skyblue;
-    min-width: 1080px;
-}
-.homepageheader {
-position: fixed;
-height: 82px;
-width: 100%;
-min-width: 980px;
-border-bottom: 1px solid #8E9D8E;
-margin:  0px;
-background-position-x: initial;
-background-position-y: initial;
-background-size: initial;
-background-attachment: initial;
-background-origin: initial;
-background-clip: initial;
-background-color: black;
 }
 
+.sale-banner {
+    display: block;
+    margin: 0 auto;
+}
+
+.home-prodlist {
+    margin: -30px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 0.1fr);
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    text-align: center;
+}
+
+.homepageheader {
+    position: fixed;
+    height: 82px;
+    width: 100%;
+    min-width: 980px;
+    margin: 0 auto;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: white;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#logo {
+    height: 100%;
+    width: 25%;
+    filter: invert(100%);
+    float: left;
+}
+
+
 .buybutton {
-margin: 0;
-padding: 9px 5px;
-font-family: Arial, Helvetica, sans-serif;
-font-size:20px;
-outline: none;
-text-align: center;
-text-decoration: none;
-color: #ffffff;
-border: solid 1px blueviolet; 
-border-right:0px;
-background: blue;
-border-top-right-radius: 5px 5px;
-border-bottom-right-radius: 5px 5px;
+    margin: 0;
+    padding: 9px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: solid 1px blueviolet;
+    border-right: 0px;
+    background: blue;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
 }
 
 .buybutton:hover {
-text-decoration: none;
-background: #24bfae;
+    text-decoration: none;
+    background: #24bfae;
 }
 
 .home-welcome {
-margin-top: 0px;
+    margin-top: 0px;
 }
 
-.home-welcome-text { 
-height: 800px;
+.home-welcome-text {
+    height: 800px;
 }
 
 .home-welcome-text h1 {
-text-align: center; 
-font-size: 85px; 
-padding-top: 150px; 
-font-weight: bold; 
-color: #ffffff;
+    text-align: center;
+    font-size: 85px;
+    padding-top: 150px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .home-welcome-text h2 {
-text-align: center;   
-font-weight: bold; 
-color: #ffffff;
-font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 30px;
 }
 
 .home-footer {
-text-align: center;
-color: #ffffff;
-background-color: #3f3838;
-font-size: 18px;
-padding: 20px 10px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #3f3838;
+    font-size: 18px;
+    padding: 20px 10px;
 }
 
 .home-prodlist h3 {
-text-align: center;
-margin: 20px 10px;
-font-size: 25px;
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 25px;
 }
 
-.home-product-img img div {
-font-size: 20px;
+.home-product-img{
+position: relative;
+width: 100%;
 }
 
-.home-product-img:hover {
-background-color: blue;
-border-radius: 8px;
-color: #fff;
+
+.overlay{
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: rgb(180, 245, 186);
+}
+
+.home-product-img:hover .overlay{
+    opacity: 1;
+}
+
+.overlay-text{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
