@@ -18,14 +18,14 @@ CREATE TABLE productInventory(
 ) AUTO_INCREMENT = 1;
 
 CREATE TABLE customerInfo(
-    customerID int(11) NOT NULL,
-    cardName varchar(100) NOT NULL,
-    expirationDate varchar (20) NOT NULL,
-    securityCode int(3) NOT NULL,
-    fName varchar(100) NOT NULL,
-    lName varchar(100) NOT NULL,
-    mobileNo int(10) NOT NULL,
-    address text NOT NULL,
+    customerID int(11),
+    cardName varchar(100),
+    expirationDate varchar (20),
+    securityCode int(3),
+    fName varchar(100),
+    lName varchar(100),
+    mobileNo int(10),
+    address text,
     company varchar(100),
     primary key(customerID)
 ) AUTO_INCREMENT = 1;
