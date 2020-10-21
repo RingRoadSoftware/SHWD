@@ -29,6 +29,7 @@ menu {
 
 a {
     width: 50%;
+    z-index: auto;
 }
 
 h3 {
