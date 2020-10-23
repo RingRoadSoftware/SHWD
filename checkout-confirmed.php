@@ -6,20 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
     <body>
-	   div class="homepageheader" style="position: relative;">
-		<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>
-			<nav>
-				<ul>
-				<li> <a href="products.php">Products</a></li>
-				<li> <a href="cart.php">Cart</a></li>
-				<li> <a href="about.php">About</a></li>
-				</ul>		
-			</nav>
-				</a>
-			</div>
-        <h1>Confirmation</h1>
-        <h2>Payment Information</h2>
+        <div class="homepageheader" style="position: relative;">
+		    <a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img></a>
+        </div>
+        <div class="form-body">
+        <h1 class="checkout-header">Confirmation</h1>
+        <div class="list1">
+        <h2 class="checkout-header2">Payment Information</h2>
+        
         <?php
+        echo "<div class='form'>";
         require_once "inc/dbconn.inc.php";
 
         $sql1 = "SELECT cardName, cardNumber, expirationDate, cvv FROM paymentInfo WHERE active = 0";
@@ -27,7 +23,7 @@
         if ($result1 = mysqli_query($conn, $sql1)){
             //echo "Success";
            if (mysqli_num_rows($result1) > 0){
-            echo "<ul>"; 
+            echo "<ul class='checkout-list'>"; 
             while ($row = mysqli_fetch_assoc($result1)){
                     
                     echo "<li>";
@@ -60,10 +56,16 @@
 
         //mysqli_close($conn);
 
-        
-        echo "<h2>";
+        echo "</div>";
+        echo "</div>";
+
+        echo "<div class='list2'>";
+
+        echo "<h2 class='checkout-header2'>";
         echo "Shipping Information";
         echo "</h2>";
+
+        echo "<div class='form'>";
 
         //require_once "inc/dbconn.inc.php";
 
@@ -72,7 +74,7 @@
         if ($result2 = mysqli_query($conn, $sql2)){
             //echo "Success";
            if (mysqli_num_rows($result2) > 0){
-            echo "<ul>"; 
+            echo "<ul class='checkout-list'>"; 
             while ($row2 = mysqli_fetch_assoc($result2)){
                     
                     echo "<li>";
@@ -113,19 +115,11 @@
         
 
         mysqli_close($conn);
-
+        
         ?>
-        <button><a href="complete-checkout.php">Continue Shopping</a></button>
- <div class="footer">
-		<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>
-			<nav>
-				<ul>
-				<li> <a href="social.php">Socials</a></li>
-				<li> <a href="copyright.php">Copyright and Privacy</a></li>
-				<li> <a href="contact.php">Contact Us</a></li>
-				</ul>		
-			</nav>
-				</a>
-			</div>
+        <button class="submit-button"><a href="complete-checkout.php" class="continue-shopping">Continue Shopping</a></button>
+        </div>
+        </div>
+        </div>
     </body>
 </html>
