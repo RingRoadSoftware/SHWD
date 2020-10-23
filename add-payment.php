@@ -1,6 +1,7 @@
 <?php
 //action="add-payment.php" method="POST"
-    if (isset($_POST["card-name"])){
+
+    /*if (isset($_POST["card-name"]){
         require_once "inc/dbconn.inc.php";
 
        $sql = "INSERT INTO customerInfo(cardName) VALUES(?);";
@@ -58,6 +59,22 @@
        } else{
            mysqli_error($conn);
        }
+    }*/
+
+    require_once "inc/dbconn.inc.php";
+
+    $card_name = mysqli_real_escape_string($conn, $_REQUEST['card-name']);
+    $card_number = mysqli_real_escape_string($conn, $_REQUEST['card-number']);
+    $expiration_date = mysqli_real_escape_string($conn, $_REQUEST['expiration-date']);
+    $cvv = mysqli_real_escape_string($conn, $_REQUEST['cvv']);
+
+    $sql = "INSERT INTO paymentInfo(cardName, cardNumber, expirationDate, cvv) VALUES 
+    ('$card_name', '$card_number', '$expiration_date', '$cvv');";
+
+    if (mysqli_query($conn, $sql)){
+        header("location: checkout-shipping.php");
+    } else {
+        echo "Error: " . mysqli_error($conn);
     }
 
     mysqli_close($conn);

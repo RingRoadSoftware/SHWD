@@ -1,6 +1,6 @@
 <?php
 //action="add-shipping.php" method="POST"
-    if (isset($_POST["first-name"])){
+    /*if (isset($_POST["first-name"])){
         require_once "inc/dbconn.inc.php";
 
        $sql = "INSERT INTO customerInfo(fName) VALUES(?);";
@@ -88,7 +88,26 @@
        } else{
            mysqli_error($conn);
        }
+    }*/
+
+    require_once "inc/dbconn.inc.php";
+
+    $first_name = mysqli_real_escape_string($conn, $_REQUEST['first-name']);
+    $last_name = mysqli_real_escape_string($conn, $_REQUEST['last-name']);
+    $mobile_number = mysqli_real_escape_string($conn, $_REQUEST['mobile-number']);
+    $address = mysqli_real_escape_string($conn, $_REQUEST['address']);
+    $zipcode = mysqli_real_escape_string($conn, $_REQUEST['zipcode']);
+    $company = mysqli_real_escape_string($conn, $_REQUEST['company']);
+
+    $sql = "INSERT INTO shippingInfo(fName, lName, mobileNo, address, zipcode, company) VALUES 
+    ('$first_name', '$last_name', '$mobile_number', '$address', '$zipcode', '$company');";
+
+    if (mysqli_query($conn, $sql)){
+        header("location: checkout-confirmed.php");
+    } else {
+        echo "Error: " . mysqli_error($conn);
     }
 
     mysqli_close($conn);
+
 ?>

@@ -1,3 +1,5 @@
+
+    
 html,
 body,
 div,
@@ -103,6 +105,7 @@ nav {
 
 nav ul {
     margin: 0;
+    margin-right: 5px;
     padding: 0;
     list-style: none;
 }
@@ -201,6 +204,27 @@ header::after {
     font-size: 30px;
 }
 
+.home-welcome-text h3 {
+    padding-top: 10px;
+    margin-left: 25%;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.home-welcome-text p{
+    padding-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #ffffff;
+    font-size: 15px;
+}
+.home-welcome-text ul{
+    padding-top: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    color: #ffffff;
+    font-size: 15px;
+}
 .home-footer {
     text-align: center;
     color: #ffffff;
@@ -253,4 +277,20 @@ width: 100%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.footer {
+
+    position: fixed;
+    height: 82px;
+    width: 100%;
+    min-width: 980px;
+    margin: 0 auto;
+    bottom: 0;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: white;
 }
