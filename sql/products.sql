@@ -13,13 +13,9 @@ CREATE TABLE productInventory(
     available int(11) NOT NULL,
     category varchar(100) NOT NULL,
     pPage varchar(20) NOT NULL,
-    picture text NOT NULL
+    picture text NOT NULL,
+    cart boolean NOT NULL DEFAULT 0
 ) AUTO_INCREMENT = 1;
-
-CREATE TABLE shoppingCart(
-    cartID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    productID int
-)
 
 CREATE TABLE paymentInfo(
     paymentID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
