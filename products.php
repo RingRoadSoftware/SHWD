@@ -38,9 +38,9 @@
 		<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>
 			<nav>
 				<ul>
-				<li> <a href="social.php">Socials</a></li>
-				<li> <a href="copyright.php">Copyright and Privacy</a></li>
-				<li> <a href="contact.php">Contact Us</a></li>
+				<li> <a href="social.html">Socials</a></li>
+				<li> <a href="copyright.html">Copyright and Privacy</a></li>
+				<li> <a href="contact.html">Contact Us</a></li>
 				</ul>		
 			</nav>
 				</a>

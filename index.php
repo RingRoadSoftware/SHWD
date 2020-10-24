@@ -34,9 +34,7 @@
 		</div>
 	</div>
 
-	<!-- we should implement a php function to pull the page value and picture from the database instead of hardcoding it in. 
-		So this would just be similar code to that of Practical 3's index.php which reads the tasks from the database, but instead that 
-		reads products.sql and embed the image and link in the webpage.-->
+
 	<div class="home-prodlist">
 		<div>
 			<h3 style="text-align: center; margin-top:100px;">Featured Products</h3>
@@ -91,21 +89,18 @@
 				</li>
 			</ul>
 		</div>
-		</li>
-		</ul>
-	</div>
-	</div>
-	<div class="footer">
-		<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>
-			<nav>
-				<ul>
-					<li> <a href="social.php">Socials</a></li>
-					<li> <a href="copyright.php">Copyright and Privacy</a></li>
-					<li> <a href="contact.php">Contact Us</a></li>
-				</ul>
-			</nav>
-		</a>
-	</div>
-</body>
 
+		<div class="footer">
+			<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>
+				<nav>
+					<ul>
+					<li> <a href="social.html">Socials</a></li>
+					<li> <a href="copyright.html">Copyright and Privacy</a></li>
+					<li> <a href="contact.html">Contact Us</a></li>
+					</ul>		
+				</nav>
+				</a>
+		</div>
+	</body>
 </html>
+

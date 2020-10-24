@@ -418,6 +418,12 @@ input:invalid:focus{
     color:white;
 }
 
+#copynotice {
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%; }
+    
 #cart-button{
     border: none;
     background-color: #ff8f00;
