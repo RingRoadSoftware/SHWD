@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Sennheiser HD-6XX</title>
+    <title>HiFiMAN HE-4XX</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -22,15 +22,17 @@
     </div>
     </div>
     <div class="home-welcome-text" style="height: 380px; ">
-        <h1>Sennheiser HD-6XX</h1>
+        <h1>HiFiMAN HE-4XX</h1>
         <div class="image-content" style="margin: 0 auto; width: 85%; height: 100%; padding: 10px;">
-            <img src="../images/HD6XX.jpg" align="left" style="display: block; margin-left: auto; margin-right: auto;">
+            <img src="../images/HE4XX.jpg" align="left" style="display: block; margin-left: auto; margin-right: auto;">
             <div class="info" style="width: 65%; margin-left: 9%;">
-                <p style="color: black; font-size: 20px; text-align: justify;">If you know audio gear, you know the
-                    Sennheiser HD 650. The company’s flagship from 2003 to 2009, this open-back headphone has shown
-                    serious staying power. Praised for its richly detailed, effortlessly enjoyable sound, it remains one
-                    of the most talked-about products on Head-Fi today—and is still widely considered among the best
-                    headphones under $1,000. </p>
+                <p style="color: black; font-size: 20px; text-align: justify;">Many headphone companies have tried their
+                    hand at planar magnetic drivers, but none have done it quite like HIFIMAN. The result of founder Dr.
+                    Fang’s PhD research at Columbia University, its driver technology has landed the company in TIME,
+                    Forbes, and CNET’s “The Audiophiliac,” and won it the CES Editors’ Choice Award. Listen to them directly from your
+                    smartphone, laptop, or desktop computer, or add a headphone amp to take them to the next level. The
+                    sound is smooth, engaging, and even across the frequency range, with airy, sparkly highs and the
+                    planar bass slam that HIFIMAN is known for.</p>
             </div>
             <div class="purchase-info">
                 <form action="TODO: REPLACE WITH ADD TO CART FORM">
