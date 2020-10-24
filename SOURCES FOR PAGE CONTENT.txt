@@ -1,0 +1,12 @@
+sale.php content: https://www.sony.com.au/electronics/headband-headphones/wh-1000xm4
+
+ananda.php: https://addictedtoaudio.com.au/products/hifiman-ananda-planar-magnetic-headphones
+
+hd800s.php: https://en-au.sennheiser.com/high-resolution-headphones-3d-audio-hd-800-s
+
+HD6XX.php: https://drop.com/buy/massdrop-sennheiser-hd6xx
+
+HE4XX.php: https://drop.com/buy/drop-hifiman-he4xx-planar-magnetic-headphones
+
+WH1000XM4: https://addictedtoaudio.com.au/collections/new-in/products/sony-wh-1000xm4-bluetooth-noise-cancelling-headphones-wh1000xm4
+           https://www.sony.com.au/electronics/headband-headphones/wh-1000xm4
