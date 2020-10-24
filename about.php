@@ -21,18 +21,17 @@
 		<div class="home-welcome">
 			<div class="home-welcome-text" style="height: 380px; ">
 				<h1><img style="width: 45%;" src="./images/ringroad logo.png" ></h1>
-                <h2>Great Deals on Headphones</h2>
-                <h3>About Us </h3>
+                <h2>About Us</h2>
                 <p> Here at Ring Road Audio Solutions we are a boutique audio solution provider
                     working with our clients to get the best personalised solutions for you at the 
                     best price possible.
                 <p> Whether you are:
                      
-                    <ul><li>a student who needs headphones that drown out your housemates so you can study</li>
-                    <li>a lecturer who needs to listen to some soothing music while marking assignments</li>
-                    <li>a commuter who wants to while away time on public transport etc, 
+                    <ul><li>-a student who needs headphones that drown out your housemates so you can study</li>
+                    <li>-a lecturer who needs to listen to some soothing music while marking assignments</li>
+                    <li>-a commuter who wants to while away time on public transport etc.
 </ul>
-                    <p> we can find the best solution for your needs.</p>
+                    <p>We can find the best solution for your needs.</p>
 			</div>
 			
         </div>
@@ -40,9 +39,9 @@
 		<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>
 			<nav>
 				<ul>
-				<li> <a href="social.php">Socials</a></li>
-				<li> <a href="copyright.php">Copyright and Privacy</a></li>
-				<li> <a href="contact.php">Contact Us</a></li>
+				<li> <a href="social.html">Socials</a></li>
+				<li> <a href="copyright.html">Copyright and Privacy</a></li>
+				<li> <a href="contact.html">Contact Us</a></li>
 				</ul>		
 			</nav>
 				</a>
