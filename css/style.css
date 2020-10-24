@@ -417,3 +417,26 @@ input:invalid:focus{
 .continue-shopping:hover{
     color:white;
 }
+
+#cart-button{
+    border: none;
+    background-color: #ff8f00;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 3.5%;
+    margin-top: 10px;;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color:white;
+    height: 100%;
+}
+
+#cart-button:hover{
+    background-color: #f57c00;
+}
+
+.purchase-info{
+    width: 100%;
+}

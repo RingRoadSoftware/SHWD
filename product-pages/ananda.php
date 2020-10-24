@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Sennheiser HD800S</title>
+	<title>HiFiMAN Ananda</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -22,19 +22,16 @@
 	</div>
 	</div>
 	<div class="home-welcome-text" style="height: 380px; ">
-		<h1>Sennheiser HD800S</h1>
+		<h1>HiFiMAN Ananda</h1>
 		<div class="image-content" style="margin: 0 auto; width: 85%; height: 100%; padding: 10px;">
-			<img src="../images/HD800S.jpg" align="left" style="display: block; margin-left: auto; margin-right: auto;">
+			<img src="../images/Ananda.jpg" align="left" style="display: block; margin-left: auto; margin-right: auto;">
 			<div class="info" style="width: 65%; margin-left: 9%;">
-				<p style="color: black; font-size: 20px; text-align: justify;">A modern classic, Sennheiser’s reference
-					class HD 800 headphones deliver sound that is as natural as possible and true in every detail.
-					Improving on a seemingly perfect formula is not a task undertaken lightly, but Sennheiser’s
-					engineers have succeeded in enhancing still further the sound reproduction in the open, circumaural
-					HD 800 S.</p>
+				<p style="color: black; font-size: 20px; text-align: justify;">ANANDA is the culmination of years of development, lightweight, ultra-fine planar drivers at their heart sing with unmatched agility and power sensitivity.
+High Sensitivity allows use with virtually any smartphone or portable audio device. Low distortion and amazing sound quality.</p>
 			</div>
 			<div class="purchase-info">
 			<form action="TODO: REPLACE WITH ADD TO CART FORM">
-			<p style="color: black; font-size: 25px;">$2499</p>
+			<p style="color: black; font-size: 25px;">$1199</p>
 				<input type="submit" value="Add to cart" id="cart-button"></input>
 				</form>
 			</div>
