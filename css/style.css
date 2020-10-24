@@ -417,3 +417,10 @@ input:invalid:focus{
 .continue-shopping:hover{
     color:white;
 }
+
+#copynotice {
+    color: white;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}

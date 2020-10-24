@@ -16,6 +16,11 @@ CREATE TABLE productInventory(
     picture text NOT NULL
 ) AUTO_INCREMENT = 1;
 
+CREATE TABLE shoppingCart(
+    cartID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    productID int
+)
+
 CREATE TABLE paymentInfo(
     paymentID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     cardName varchar(100) NOT NULL,
