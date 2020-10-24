@@ -284,7 +284,7 @@ header::after {
 
     position: fixed;
     height: 82px;
-    width: 100%;
+    
     min-width: 980px;
     margin: 0 auto;
     bottom: 0;
