@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <!-- final checkout page -->
-    <head>
-		<title>RR Audio Solutions - Checkout</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-    <body>
-        <div class="homepageheader" style="position: relative;">
-		    <a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img></a>
-        </div>
-        <div class="form-body">
+
+<head>
+    <title>RR Audio Solutions - Checkout</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="homepageheader" style="position: relative;">
+        <a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img></a>
+    </div>
+    <div class="form-body">
         <h1 class="checkout-header">Confirmation</h1>
         <div class="list1">
-        <h2 class="checkout-header2">Payment Information</h2>
-        
-        <?php
+            <h2 class="checkout-header2">Payment Information</h2>
+
+            <?php
         echo "<div class='form'>";
         require_once "inc/dbconn.inc.php";
 
@@ -22,7 +24,7 @@
         
         if ($result1 = mysqli_query($conn, $sql1)){
             //echo "Success";
-           if (mysqli_num_rows($result1) > 0){
+            if (mysqli_num_rows($result1) > 0){
             echo "<ul class='checkout-list'>"; 
             while ($row = mysqli_fetch_assoc($result1)){
                     
@@ -117,9 +119,11 @@
         mysqli_close($conn);
         
         ?>
-        <button class="submit-button"><a href="complete-checkout.php" class="continue-shopping">Continue Shopping</a></button>
+            <button class="submit-button"><a href="complete-checkout.php" class="continue-shopping">Continue
+                    Shopping</a></button>
         </div>
-        </div>
-        </div>
-    </body>
+    </div>
+    </div>
+</body>
+
 </html>

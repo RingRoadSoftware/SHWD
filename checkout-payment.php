@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <!-- first checkout page, after cart, payment info -->
-    <head>
-		<title>RR Audio Solutions - Checkout</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-    <body>
-        <div class="homepageheader" style="position: relative;">
-		    <a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img></a>
-        </div>
-        <div class="form-body">
+
+<head>
+    <title>RR Audio Solutions - Checkout</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="homepageheader" style="position: relative;">
+        <a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img></a>
+    </div>
+    <div class="form-body">
         <h1 class="checkout-header">Enter payment details</h1>
         <form action="add-payment.php" method="POST" class="form">
             <label for="card-name">Card Name</label>
@@ -28,6 +30,7 @@
             <br>
             <input type="submit" class="submit-button" value="Proceed to Shipping">
         </form>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>

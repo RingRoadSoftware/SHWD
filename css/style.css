@@ -1,5 +1,3 @@
-
-    
 html,
 body,
 div,
@@ -211,20 +209,22 @@ header::after {
     font-size: 20px;
 }
 
-.home-welcome-text p{
+.home-welcome-text p {
     padding-top: 10px;
     margin-left: 25%;
     margin-right: 25%;
     color: #ffffff;
     font-size: 15px;
 }
-.home-welcome-text ul{
+
+.home-welcome-text ul {
     padding-top: 10px;
     margin-left: 25%;
     margin-right: 25%;
     color: #ffffff;
     font-size: 15px;
 }
+
 .home-footer {
     text-align: center;
     color: #ffffff;
@@ -239,18 +239,18 @@ header::after {
     font-size: 25px;
 }
 
-.home-product-img{
-position: relative;
-width: 100%;
+.home-product-img {
+    position: relative;
+    width: 100%;
 }
 
-.home-products{
+.home-products {
     display: block;
     width: 100%;
     height: auto;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -263,11 +263,11 @@ width: 100%;
     background-color: rgb(180, 245, 186);
 }
 
-.home-product-img:hover .overlay{
+.home-product-img:hover .overlay {
     opacity: 1;
 }
 
-.overlay-text{
+.overlay-text {
     color: black;
     font-size: 20px;
     position: absolute;
@@ -278,6 +278,7 @@ width: 100%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .footer {
 
     position: fixed;
@@ -295,106 +296,106 @@ width: 100%;
     background-color: white;
 }
 
-.checkout-header{
+.checkout-header {
     font-weight: bold;
     font-size: 24px;
     padding: 15px;
     margin-bottom: 25px;
 }
 
-.checkout-header2{
+.checkout-header2 {
     font-weight: bold;
     font-size: 18px;
     padding: 15px;
 }
 
-.form-body{
+.form-body {
     margin-top: 25px;
     margin-left: 25px;
     width: 1000px;
 }
 
-.form{
+.form {
     padding: 25px;
     width: 500px;
 }
 
-.list1{
-    float:left;
+.list1 {
+    float: left;
 }
 
-.list2{
-    float:right;
+.list2 {
+    float: right;
 }
 
-label{
+label {
     font-size: 14px;
     align-items: center;
 }
 
-input{
+input {
     font-size: 14px;
     margin-bottom: 10px;
     height: 20px;
     border: black solid 1px;
 }
 
-input:invalid{
+input:invalid {
     border: red solid;
 }
 
-input:invalid:focus{
+input:invalid:focus {
     border: red solid;
 }
 
-.checkout-list{
+.checkout-list {
     font-size: 14px;
 }
 
-#card-number{
+#card-number {
     margin-bottom: 17px;
 }
 
-#cvv{
+#cvv {
     width: 25px;
-    margin-left: 70px; 
+    margin-left: 70px;
 }
 
-#expiration-date{
+#expiration-date {
     width: 34px;
     float: left;
-    
+
 }
 
-#expiration-date-label{
+#expiration-date-label {
     width: 15px;
-    margin-top:14px;
+    margin-top: 14px;
 }
 
-#first-name{
-    float:left;
+#first-name {
+    float: left;
     margin-right: 30px;
 }
 
-#first-name-label{
+#first-name-label {
     margin-right: 137px;
 }
 
-#address{
+#address {
     width: 384px;
 }
 
-#zipcode{
+#zipcode {
     float: left;
     margin-right: 166px;
     width: 40px;
 }
 
-#zipcode-label{
+#zipcode-label {
     margin-right: 155px;
 }
 
-.submit-button{
+.submit-button {
     background-color: white;
     border: black solid;
     padding: 10px;
@@ -403,46 +404,48 @@ input:invalid:focus{
     float: left;
 }
 
-.submit-button:hover{
+.submit-button:hover {
     background-color: #cc66ff;
     color: white;
 }
 
-.continue-shopping{
+.continue-shopping {
     font-size: 14px;
     color: black;
     text-decoration: none;
 }
 
-.continue-shopping:hover{
-    color:white;
+.continue-shopping:hover {
+    color: white;
 }
 
 #copynotice {
     color: white;
     text-align: center;
     margin-left: 35%;
-    margin-right: 35%; }
-    
-#cart-button{
+    margin-right: 35%;
+}
+
+#cart-button {
     border: none;
     background-color: #ff8f00;
     font-weight: bold;
     text-transform: uppercase;
     margin-left: 3.5%;
-    margin-top: 10px;;
+    margin-top: 10px;
+    ;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    color:white;
+    color: white;
     height: 100%;
 }
 
-#cart-button:hover{
+#cart-button:hover {
     background-color: #f57c00;
 }
 
-.purchase-info{
+.purchase-info {
     width: 100%;
 }
