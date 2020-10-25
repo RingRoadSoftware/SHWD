@@ -1,7 +1,7 @@
 <?php
 //action="add-payment.php" method="POST"
 
-    require_once "inc/dbconn.inc.php";
+    require_once "inc/dbconny.inc.php";
 
     $card_name = mysqli_real_escape_string($conn, $_REQUEST['card-name']);
     $card_number = mysqli_real_escape_string($conn, $_REQUEST['card-number']);

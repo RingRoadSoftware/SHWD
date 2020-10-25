@@ -1,15 +1,33 @@
 <?php
-
-define("DB_HOST", "localhost");
-define("DB_NAME", "products");
-define("DB_USER", "dbadmin");
-define("DB_PASS", "");
-
-$conn = @mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-if (!$conn) {
-    // Something went wrong...
-    echo "Error: Unable to connect to database.<br>";
-    echo "Debugging errno: " . mysqli_connect_errno() . "<br>";
-    echo "Debugging error: " . mysqli_connect_error() . "<br>";
-    exit;
+class DBController {
+	public $DB_HOST = "localhost";
+	public $DB_USER = "dbadmin";
+	public $DB_PASS = "";
+	public $database = "products";
+	public $conn;
+	
+	function __construct() {
+		$this->conn = $this->connectDB();
+	}
+	
+	function connectDB() {
+		$conn = mysqli_connect($this->DB_HOST,$this->DB_USER,$this->DB_PASS,$this->database);
+		return $conn;
+	}
+	
+	function runQuery($query) {
+		$result = mysqli_query($this->conn,$query);
+		while($row=mysqli_fetch_assoc($result)) {
+			$resultset[] = $row;
+		}		
+		if(!empty($resultset))
+			return $resultset;
+	}
+	
+	function numRows($query) {
+		$result  = mysqli_query($this->conn,$query);
+		$rowcount = mysqli_num_rows($result);
+		return $rowcount;	
+	}
 }
+?>

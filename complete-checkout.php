@@ -1,6 +1,6 @@
 <?php
 
-    require_once "inc/dbconn.inc.php";
+    require_once "inc/dbconny.inc.php";
 
     $sql = "UPDATE paymentInfo SET active = 1 WHERE active = 0";
     $sql2 = "UPDATE shippingInfo SET active = 1 WHERE active = 0";

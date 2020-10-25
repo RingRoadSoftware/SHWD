@@ -1,7 +1,7 @@
 <?php
 //action="add-shipping.php" method="POST"
 
-    require_once "inc/dbconn.inc.php";
+    require_once "inc/dbconny.inc.php";
 
     $first_name = mysqli_real_escape_string($conn, $_REQUEST['first-name']);
     $last_name = mysqli_real_escape_string($conn, $_REQUEST['last-name']);

@@ -18,7 +18,7 @@
 
             <?php
         echo "<div class='form'>";
-        require_once "inc/dbconn.inc.php";
+        require_once "inc/dbconny.inc.php";
 
         $sql1 = "SELECT cardName, cardNumber, expirationDate, cvv FROM paymentInfo WHERE active = 0";
         

@@ -7,6 +7,18 @@ USE products;
 
 CREATE TABLE productInventory(
     productID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name varchar(100) NOT NULL,
+    price int(11) NOT NULL,
+    description text NOT NULL,
+    available int(11) NOT NULL,
+    category varchar(100) NOT NULL,
+    pPage varchar(20) NOT NULL,
+    image text NOT NULL,
+    code int(11) NOT NULL
+) AUTO_INCREMENT = 1;
+
+CREATE TABLE shoppingCart(
+    productID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     pName varchar(100) NOT NULL,
     price int(11) NOT NULL,
     description text NOT NULL,
@@ -15,11 +27,6 @@ CREATE TABLE productInventory(
     pPage varchar(20) NOT NULL,
     picture text NOT NULL
 ) AUTO_INCREMENT = 1;
-
-CREATE TABLE shoppingCart(
-    cartID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    productID int
-)
 
 CREATE TABLE paymentInfo(
     paymentID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -58,14 +65,14 @@ GRANT all privileges ON products.paymentInfo TO dbadmin@localhost;
 GRANT all privileges ON products.shippingInfo TO dbadmin@localhost;
 GRANT all privileges ON products.transaction TO dbadmin@localhost;
 
-INSERT INTO productInventory (productID, pName, price, description, available, category, pPage, picture) VALUES
-(1, 'Product1', 69, 'A product description', 69, 'Closed-Back Headphones', 'hd800s.php', 'HD800S.jpg'),
-(2, 'Product2', 69, 'A product description', 420, 'Open-Back Headphones', 'ananda.php', 'ANANDA.jpg'),
-(3, 'Product3', 69, 'A product description', 21, 'IEMs', 'ananda.php', 'HD6XX.jpg'),
-(4, 'Product4', 69, 'A product description', 21, 'IEMs', 'he4xx.php', 'HE4XX.jpg'),
-(5, 'Product5', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(6, 'Product6', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(7, 'Product7', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(8, 'Product8', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(9, 'Product9', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(10, 'Product10', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg');
+INSERT INTO productInventory (productID, name, price, description, available, category, pPage, image, code) VALUES
+(1, 'Product1', 69, 'A product description', 69, 'Closed-Back Headphones', 'hd800s.php', 'HD800S.jpg', '1'),
+(2, 'Product2', 69, 'A product description', 420, 'Open-Back Headphones', 'ananda.php', 'ANANDA.jpg', '2'),
+(3, 'Product3', 69, 'A product description', 21, 'IEMs', 'ananda.php', 'HD6XX.jpg', '3'),
+(4, 'Product4', 69, 'A product description', 21, 'IEMs', 'he4xx.php', 'HE4XX.jpg', '4'),
+(5, 'Product5', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg', '5'),
+(6, 'Product6', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg', '6'),
+(7, 'Product7', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg', '7'),
+(8, 'Product8', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg', '8'),
+(9, 'Product9', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg', '9'),
+(10, 'Product10', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg', '10');
