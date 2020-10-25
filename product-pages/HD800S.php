@@ -33,7 +33,7 @@
 					HD 800 S.</p>
 			</div>
 			<div class="purchase-info">
-			<form action="TODO: REPLACE WITH ADD TO CART FORM">
+			<form action="add-cart.php?productID='1'">
 			<p style="color: black; font-size: 25px;">$2499</p>
 				<input type="submit" value="Add to cart" id="cart-button"></input>
 				</form>

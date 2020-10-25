@@ -34,7 +34,7 @@
                 </p>
             </div>
             <div class="purchase-info">
-                <form action="TODO: REPLACE WITH ADD TO CART FORM">
+                <form action="add-cart.php?productID='8'">
                     <p style="color: black; font-size: 25px;">$169</p>
                     <input type="submit" value="Add to cart" id="cart-button"></input>
                 </form>

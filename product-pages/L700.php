@@ -31,7 +31,7 @@
                     enclosure - the new SR-L700 advanced-Lambda series Earspeaker.</p>
             </div>
             <div class="purchase-info">
-                <form action="TODO: REPLACE WITH ADD TO CART FORM">
+                <form action="add-cart.php?productID='9'">
                     <p style="color: black; font-size: 25px;">$2,199</p>
                     <input type="submit" value="Add to cart" id="cart-button"></input>
                 </form>

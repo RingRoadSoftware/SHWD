@@ -21,11 +21,6 @@
 		</a>
 	</div>
 	</div>
-
-
-
-
-
 	</div>
 	<div class="footer">
 		<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>

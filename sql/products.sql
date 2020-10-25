@@ -55,13 +55,13 @@ GRANT all privileges ON products.shippingInfo TO dbadmin@localhost;
 GRANT all privileges ON products.transaction TO dbadmin@localhost;
 
 INSERT INTO productInventory (productID, pName, price, description, available, category, pPage, picture) VALUES
-(1, 'Product1', 69, 'A product description', 69, 'Closed-Back Headphones', 'hd800s.php', 'HD800S.jpg'),
-(2, 'Product2', 69, 'A product description', 420, 'Open-Back Headphones', 'ananda.php', 'ANANDA.jpg'),
-(3, 'Product3', 69, 'A product description', 21, 'IEMs', 'ananda.php', 'HD6XX.jpg'),
-(4, 'Product4', 69, 'A product description', 21, 'IEMs', 'he4xx.php', 'HE4XX.jpg'),
-(5, 'Product5', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(6, 'Product6', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(7, 'Product7', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(8, 'Product8', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(9, 'Product9', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg'),
-(10, 'Product10', 69, 'A product description', 21, 'IEMs', 'product3.php', 'productpic3.jpg');
+(1, 'HD800S', 2499, 'Dynamic Driver', 69, 'Open-Back Headphones', 'hd800s.php', 'HD800S.jpg'),
+(2, 'Ananda', 1199, 'Planar Magnetic Driver', 420, 'Open-Back Headphones', 'ananda.php', 'ANANDA.jpg'),
+(3, 'HD6XX', 280, 'Planar Magnetic Driver', 21, 'Open-Back Headphones', 'HD6XX.php', 'HD6XX.jpg'),
+(4, 'HE4XX', 6200, 'Planar Magnetic Driver', 21, 'Open-Back Headphones', 'he4xx.php', 'HE4XX.jpg'),
+(5, 'LCD3', 3049, 'Planar Magnetic Driver', 21, 'Open-Back Headphones', 'LCD3.php', 'LCD3.jpg'),
+(6, 'SR80E', 169, 'Dynamic Driver', 21, 'Open-Back Headphones', 'sr80e3.php', 'SR80E.jpg'),
+(7, 'WH1000XM4', 400, 'Dynamic Driver', 21, 'Closed-Back Headphones', 'sale.php', 'wh1000xm4.jpg'),
+(8, 'ATHM40X', 169, 'Dynamic Driver', 21, 'Closed-Back Headphones', 'm40x.php', 'ATHM40X.jpg'),
+(9, 'L700', 2199, 'Electrostatic Driver', 21, 'Open-Back Headphones', 'L700.php', 'L700.jpg'),
+(10, 'Clear', 1199, 'Dynamic Driver', 21, 'Open-Back Headphones', 'CLEAR.php', 'CLEAR.jpg');

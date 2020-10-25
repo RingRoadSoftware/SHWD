@@ -33,7 +33,7 @@
                     headphones under $1,000. </p>
             </div>
             <div class="purchase-info">
-                <form action="TODO: REPLACE WITH ADD TO CART FORM">
+                <form action="add-cart.php?productID='3'">
                     <p style="color: black; font-size: 25px;">$1199</p>
                     <input type="submit" value="Add to cart" id="cart-button"></input>
                 </form>
