@@ -24,7 +24,7 @@
     <div class="home-welcome-text" style="height: 380px; ">
         <h1>Audio Technica ATH-M40X</h1>
         <div class="image-content" style="margin: 0 auto; width: 85%; height: 100%; padding: 10px;">
-            <img src="../images/M40X.jpg" align="left" style="display: block; margin-left: auto; margin-right: auto;">
+            <img src="../images/ATHM40X.jpg" align="left" style="display: block; margin-left: auto; margin-right: auto;">
             <div class="info" style="width: 65%; margin-left: 9%;">
                 <p style="color: black; font-size: 20px; text-align: justify;">The M-Series ATH-M40x professional
                     monitor headphones are tuned flat for incredibly accurate audio monitoring across an extended
@@ -34,7 +34,7 @@
                 </p>
             </div>
             <div class="purchase-info">
-                <form action="TODO: REPLACE WITH ADD TO CART FORM">
+                <form action="add-cart.php?productID='8'">
                     <p style="color: black; font-size: 25px;">$169</p>
                     <input type="submit" value="Add to cart" id="cart-button"></input>
                 </form>

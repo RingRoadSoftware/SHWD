@@ -32,24 +32,11 @@
 					engineers have succeeded in enhancing still further the sound reproduction in the open, circumaural
 					HD 800 S.</p>
 			</div>
-
-			<?php
-{
-			$prodID = 1;
-
-?>
-
 			<div class="purchase-info">
-			<form  method="post" action="../cart.php?action=add&code=<?php echo $prodID['code']; ?>">
-			<input type="text" class="product-quantity" name="quantity" value="1" size="2" />
+			<form action="add-cart.php?productID='1'">
 			<p style="color: black; font-size: 25px;">$2499</p>
 				<input type="submit" value="Add to cart" id="cart-button"></input>
 				</form>
-
-<?php
-	
-}
-?>
 			</div>
 		</div>
 	</div>
