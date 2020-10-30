@@ -1,3 +1,29 @@
+
+<html>
+<head>
+<title>Cart</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+
+</head>
+<body>
+
+
+<div class="homepageheader" style="position: relative;">
+
+		<a href="index.php"><img src="images/Ringroad Logo.png" id="logo"></img>
+			<nav>
+				<ul>
+					<li> <a href="products.php">Products</a></li>
+					<li> <a href="cart.php">Cart</a></li>
+					<li> <a href="about.php">About</a></li>
+				</ul>
+			</nav>
+		</a>
+	</div>
+
+	<h1>Shopping Cart</h1>
+
+	<div id="shopping-cart">
 <?php
 session_start();
 require_once("inc/dbconn.inc.php");
@@ -8,7 +34,7 @@ switch($_GET["action"]) {
 	case "add":
 		if(!empty($_POST["quantity"])) {
 			$productByCode = $db_handle->runQuery("SELECT * FROM productInventory WHERE code='" . $_GET["code"] . "'");
-			$itemArray = array($productByCode[0]["code"]=>array('name'=>$productByCode[0]["name"], 'code'=>$productByCode[0]["code"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode[0]["price"], 'image'=>$productByCode[0]["image"]));
+			$itemArray = array($productByCode[0]["code"]=>array('pName'=>$productByCode[0]["pName"], 'code'=>$productByCode[0]["code"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode[0]["price"], 'image'=>$productByCode[0]["image"]));
 			
 			if(!empty($_SESSION["cart_item"])) {
 				if(in_array($productByCode[0]["code"],array_keys($_SESSION["cart_item"]))) {
@@ -45,16 +71,11 @@ switch($_GET["action"]) {
 }
 }
 ?>
-<html>
-<head>
-<title>Cart</title>
-<link href="style.css" type="text/css" rel="stylesheet" />
-</head>
-<body>
-<div id="shopping-cart">
-<div class="txt-heading">Shopping Cart</div>
 
-<a id="cart-button" href="cart.php?action=empty">Empty Cart</a>
+
+
+
+
 <?php
 if(isset($_SESSION["cart_item"])){
     $total_quantity = 0;
@@ -75,12 +96,12 @@ if(isset($_SESSION["cart_item"])){
         $item_price = $item["quantity"]*$item["price"];
 		?>
 				<tr>
-				<td><img src="<?php echo $item["image"]; ?>" class="cart-item-image" /><?php echo $item["name"]; ?></td>
+				<td><?php echo $item["pName"]; ?></td>
 				<td><?php echo $item["code"]; ?></td>
 				<td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
 				<td  style="text-align:right;"><?php echo "$ ".$item["price"]; ?></td>
 				<td  style="text-align:right;"><?php echo "$ ". number_format($item_price,2); ?></td>
-				<td style="text-align:center;"><a href="cart.php?action=remove&code=<?php echo $item["code"]; ?>" class="cart-button"></td>
+				<td style="text-align:center;"><a href="cart.php?action=remove&code=<?php echo $item["code"]; ?>" class="cart-button">Remove</a></td>
 				</tr>
 				<?php
 				$total_quantity += $item["quantity"];
@@ -105,23 +126,20 @@ Your Cart is Empty
 <?php 
 }
 ?>
+<p>
+<div id= "buttonrow">
+<a id="cart-button" href="cart.php?action=empty">Empty Cart</a>
+<a id="cart-button" href="checkout-payment.php">Proceed to checkout</a>
+<a id="cart-button" href="products.php">Continue Shopping</a>
+</div>
 </div>
 
-</div>
-		<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>
-			<nav>
-				<ul>
-					<li> <a href="products.php">Products</a></li>
-					<li> <a href="cart.php">Cart</a></li>
-					<li> <a href="about.php">About</a></li>
-				</ul>
-			</nav>
-		</a>
-	</div>
+
+
 	</div>
 	</div>
 	<div class="footer">
-		<a href="index.php"><img src="./images/Ringroad Logo.png" id="logo"></img>
+		<a href="index.php"><img src="images/Ringroad Logo.png" id="logo"></img>
 			<nav>
 				<ul>
 					<li> <a href="social.php">Socials</a></li>
