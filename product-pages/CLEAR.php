@@ -33,7 +33,7 @@
                     the sound.</p>
             </div>
             <div class="purchase-info">
-                <form action="add-cart.php?productID='10'">
+                <form action="../add-cart.php?productID='10'">
                     <p style="color: black; font-size: 25px;">$1199</p>
                     <input type="submit" value="Add to cart" id="cart-button"></input>
                 </form>

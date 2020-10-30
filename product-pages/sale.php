@@ -31,7 +31,7 @@
                     technology that automatically personalises your experience.</p>
             </div>
             <div class="purchase-info">
-                <form action="add-cart.php?productID='7'">
+                <form action="../add-cart.php?productID='7'">
                     <p style="color: black; font-size: 25px;">$400</p>
                     <input type="submit" value="Add to cart" id="cart-button"></input>
                 </form>

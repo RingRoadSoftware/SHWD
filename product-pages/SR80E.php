@@ -36,7 +36,7 @@
                 </p>
             </div>
             <div class="purchase-info">
-                <form action="add-cart.php?productID='6'">
+                <form action="../add-cart.php?productID='6'">
                     <p style="color: black; font-size: 25px;">$169</p>
                     <input type="submit" value="Add to cart" id="cart-button"></input>
                 </form>

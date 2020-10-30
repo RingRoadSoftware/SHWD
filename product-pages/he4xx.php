@@ -35,7 +35,7 @@
                     planar bass slam that HIFIMAN is known for.</p>
             </div>
             <div class="purchase-info">
-                <form action="add-cart.php?productID='4'">
+                <form action="../add-cart.php?productID='4'">
                     <p style="color: black; font-size: 25px;">$1199</p>
                     <input type="submit" value="Add to cart" id="cart-button"></input>
                 </form>

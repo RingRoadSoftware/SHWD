@@ -30,7 +30,7 @@
 				High Sensitivity allows use with virtually any smartphone or portable audio device. Low distortion and amazing sound quality.</p>
 			</div>
 			<div class="purchase-info">
-			<form action="add-cart.php?productID='1'" method="POST">
+			<form action="../add-cart.php?productID='1'" method="POST">
 			<p style="color: black; font-size: 25px;">$1199</p>
 				<input type="submit" value="Add to cart" id="cart-button"></input>
 				</form>
